@@ -1,0 +1,52 @@
+# Heart Disease Prediction Hackathon
+
+## 🎯 Objective
+Predict whether a patient is at risk of heart disease (1 = Disease, 0 = No disease) based on clinical features.
+
+You are provided with:
+- `train.csv` → contains 14 features + target `Heart_Disease`
+- `test.csv` → same features, but without target
+- `sample_submission.csv` → format for final submission
+
+Your task:
+Build an ML model (any algorithm: Logistic Regression, Random Forest, XGBoost, CatBoost, Neural Network) to predict the probability of heart disease.
+
+---
+
+## 📁 Dataset Description
+
+| Column | Description |
+|--------|-------------|
+| age | Age of patient |
+| Gender | Male/Female |
+| chest_pain_type | 4 categories |
+| blood_pressure_level | Resting BP |
+| cholesterol_level | Serum cholesterol |
+| blood_sugar | Fasting blood sugar > 120 mg/dl (1 = true) |
+| restecg | Resting ECG result |
+| thalach | Maximum heart rate achieved |
+| exang | Exercise-induced angina |
+| oldpeak | ST depression |
+| slope | Slope of peak exercise ST |
+| ca | Number of major vessels (0–4) |
+| thal | Thallium test |
+| Heart_Disease | Target variable |
+| ID | Patient ID |
+
+---
+
+## 📤 sample_submission.csv
+
+Format:
+
+ID | Heart_Disease  
+---|-------------  
+integer row index | predicted value (0-1)
+---
+
+## 🏆 Evaluation Metric
+
+## ⚠ Important Notes
+
+- You may use ML models or deep learning.
+- You must submit predictions for **every row in test.csv**.
